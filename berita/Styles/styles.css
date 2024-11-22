@@ -1,0 +1,36 @@
+nav ul li{
+    display:inline-flex;
+    gap:px;
+    margin:auto 2px;
+}
+nav {
+    display: inline-flex;
+    position:fixed;
+    flex-direction: row;
+    background-color: #08086b;
+    width: 100%;
+    margin: 0;
+    left:0;
+    top:0;
+}
+img{
+    width: 120px;
+    max-width: 100%;
+    height: fit-content;
+    padding:2% 1% 1% 2%;
+    margin:auto 2px;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+    padding:4px 8px;
+}
+a:hover{
+    background-color: #fff;
+    color:#08086b;
+    padding:4px 8px;
+    transition-duration: 120ms;
+}
+.container{
+    margin-top:9em;
+}
