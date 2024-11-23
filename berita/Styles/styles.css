@@ -4,6 +4,7 @@
 }
 nav ul li{
     display:inline-flex;
+    flex-flow:row;
     gap: 10px;
     margin:auto 2px;
 }
