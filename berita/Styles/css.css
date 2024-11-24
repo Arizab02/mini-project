@@ -1,0 +1,14 @@
+nav{
+    width:auto;
+    height: 60px;
+    background-color:burlywood;
+    display: flex;
+}
+nav ul li a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    display: inline-flex;
+    flex-flow: row;
+}
