@@ -73,6 +73,17 @@ a{
     padding: 10px 15px;
     background-color: aliceblue;
 }
+.iklan img{
+    position:sticky;
+    top:0;
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
+}
+figcaption{
+    font-size:12px ;
+    color:#aaa ;
+}
 .link{
     flex: 1;
     order: 3;
