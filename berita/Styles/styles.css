@@ -49,7 +49,8 @@ a{
 }
 .container{
     background-color: antiquewhite;
-    width: 800px;
+    width: 80%;
+    min-width:800px;
     padding: 4em;
     margin:50px auto;
     box-sizing: border-box;
@@ -74,6 +75,8 @@ a{
     background-color: aliceblue;
 }
 .iklan img{
+    display: flex;
+    flex-direction: row;
     position:sticky;
     top:0;
     width: 100px;
@@ -89,4 +92,44 @@ figcaption{
     order: 3;
     padding: 10px 15px;
     background-color: aliceblue;
+}
+.panel{
+    background-color: aliceblue;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+.gallery{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    box-sizing:border-box;
+    justify-content:center;
+}
+.thumbnail{
+    width:25%;
+}
+.thumbnail img{
+    width:100%;
+    /* height:200px; */
+}
+
+@media(max-width:800px){
+    .container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 200px;
+        max-width: 550px;
+    }
+    .text, .iklan, .link{
+        margin-bottom: 10px;
+    }
+    .iklan{
+        display: flex;
+        flex-direction: column;
+        position:static;
+        flex-wrap: wrap;
+    }
+    .thumbnail{
+        width:50%;
+    }
 }
