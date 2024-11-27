@@ -46,6 +46,8 @@ a{
 .text img{
     width:200px;
     height:200px;
+    float: left;
+    margin:9px;
 }
 .container{
     background-color: antiquewhite;
@@ -75,9 +77,7 @@ a{
     background-color: aliceblue;
 }
 .iklan img{
-    display: flex;
-    flex-direction: row;
-    position:sticky;
+    position:static;
     top:0;
     width: 100px;
     height: 100px;
@@ -110,7 +110,30 @@ figcaption{
 }
 .thumbnail img{
     width:100%;
+    max-width: 200px;
     /* height:200px; */
+}
+
+.kartu{
+    width: 30%;
+    margin: 2px;
+    background-color: #c50c0c;
+    overflow: hidden;
+    flex-grow: 1;
+}
+.kartu.besar{
+    transform: scale(1.10);
+}
+.content{
+    width:200px;
+    height: 100px;
+}
+div.kartu div.deskripsi{
+    padding:10px;
+    border-radius: 0%;
+    background-color: #cf2727;
+    text-align: center;
+    overflow: hidden;
 }
 
 @media(max-width:800px){
@@ -123,9 +146,9 @@ figcaption{
     .text, .iklan, .link{
         margin-bottom: 10px;
     }
-    .iklan{
+    .page{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         position:static;
         flex-wrap: wrap;
     }
