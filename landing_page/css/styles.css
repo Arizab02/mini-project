@@ -101,6 +101,13 @@ span{
 }
 .items{
     flex-grow:2;
+    transition-duration: 150ms;
+    /* box-shadow: #000; */
+}
+.items:hover{
+    transform: translate(-10px,-10px);
+    /* border:10px solid #000; */
+    /* box-shadow: #000000ec; */
 }
 .card{
     background-color: #ffc398;
@@ -174,4 +181,5 @@ span{
 }
 .harga{
     /* float:left; */
+    font-weight: 600;
 }
