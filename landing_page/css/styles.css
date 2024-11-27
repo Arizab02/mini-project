@@ -20,20 +20,7 @@ html,body{
 body{
     background-color: #525050;
 }
-/* Menu navigator */
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding:10px;
-    margin:5px auto;
-}
-ul{
-    display:flex;
-    justify-content: center;
-}
-li,a,button{
+li,a,h1,h2,p{
     font-family: "Parkinsans",sans-serif;
     font-weight:300 ;
     font-style: normal;
@@ -42,6 +29,21 @@ li,a,button{
     color: #fff;
     padding:2px 5px;
 }
+/* Menu navigator */
+header{
+    width:100%;
+    position:fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    margin:5px 0;
+}
+ul{
+    display:flex;
+    justify-content: center;
+}
 .main.items a{
     font-weight:700;
     font-size: 24px;
@@ -49,16 +51,87 @@ li,a,button{
 header ul li{
     padding: 0 10px 0 10px;
 }
-a:hover{
+header ul li a:hover{
     color:rgba(0,0,0,60%);
     background-color: #ffffffaa;
     transition-duration: 200ms;
 }
 .search_button a{
     border:0 solid;
-    background-color: rgba(0,0,0,60%);
+    color:#000;
+    /* background-color: rgba(0,0,0,60%); */
 }
 /* Container pertama */
 .container-satu{
-    background-image:url("coffee_background.jpg");
+    background-image:url(coffee_background.jpg);
+    background-size: cover;
+    width:100%;
+    height: 600px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+.element{
+    position:absolute;
+    margin-left: 10%;
+}
+.element p{
+    color:#fff;
+    font-weight: 400;
+    font-size:24px;
+}
+span{
+    color:#d2691e;
+}
+
+/* container dua */
+.container-dua{
+    /* width:100%; */
+    height: 300px;
+    background-color: #ec9759;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.items{
+    flex-grow:2;
+}
+.card{
+    background-color: #ffc398;
+    margin: 20px;
+    padding:10px;
+    border-radius: 20px;
+    display:flex;
+    align-items: center;
+}
+/* .card img{
+    align-items: center;
+} */
+.card p{
+    color:#d2691e;
+    text-align: center;
+}
+
+/* container tiga */
+.container-tiga{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.menu{
+    background-color: #ffc398;
+    margin: 10px;
+    /* padding:10px; */
+    overflow:hidden;
+    border-radius: 20px;
+    display:flex;
+    align-items:normal;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+.menu h2{
+    color:#000;
+    font-weight: 500;
+    padding-bottom:2px;
 }
